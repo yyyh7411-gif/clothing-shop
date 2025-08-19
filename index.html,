@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clothing Brand</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    header {
+      background-color: #222;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 2em;
+      text-shadow: 1px 1px 4px black;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+    .product {
+      background: white;
+      margin: 10px;
+      width: 200px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+    }
+    .product:hover {
+      transform: scale(1.05);
+    }
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .product h3 {
+      text-align: center;
+      padding: 10px 0;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Clothify</h1>
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  Trendy Clothing for Everyone
+</div>
+
+<section id="products" class="products">
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1618354693584-d5f35f71a0f8?auto=format&fit=crop&w=400&q=80" alt="T-Shirt">
+    <h3>Classic T-Shirt</h3>
+  </div>
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1593032465173-7e4f5b0225ff?auto=format&fit=crop&w=400&q=80" alt="Hoodie">
+    <h3>Cozy Hoodie</h3>
+  </div>
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1600185366787-7b16f6e5e2d0?auto=format&fit=crop&w=400&q=80" alt="Jacket">
+    <h3>Stylish Jacket</h3>
+  </div>
+</section>
+
+<footer id="contact">
+  <p>Contact us: info@clothify.com</p>
+  <p>&copy; 2025 Clothify</p>
+</footer>
+
+</body>
+</html>
